@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'ukiyorest.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
+DATABASES = {}
 if os.environ.get('DATABASE_URL'):
     DATABASES['default'] = dj_database_url.config(default=os.environ['DATABASE_URL'])
 
